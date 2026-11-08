@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Muhammad Shoaib | BS ELT Internship Portfolio</title>
+<meta name="description" content="Final internship portfolio of Muhammad Shoaib, BS English Language Teaching, University of Sindh, Jamshoro.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Young+Serif&family=Public+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --board:#1f3b34; --board2:#2a4c43; --chalk:#f4f1e6; --chalk-dim:#bcc9c0;
+  --paper:#fbfaf5; --ink:#1d2623; --muted:#5d6b66; --rule:#cfdde3; --margin:#e0836f;
+  --yellow:#f0d37a; --pen:#b9432d;
+  --serif:"Young Serif",Georgia,"Times New Roman",serif;
+  --sans:"Public Sans",system-ui,-apple-system,"Segoe UI",Arial,sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:70px}
+body{margin:0;font-family:var(--sans);font-size:17px;line-height:1.65;color:var(--ink);background:var(--paper)}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--pen);outline-offset:3px}
+.wrap{max-width:1040px;margin:0 auto;padding:0 24px}
+
+/* nav */
+header.nav{position:sticky;top:0;z-index:10;background:var(--board);color:var(--chalk);border-bottom:3px solid var(--yellow)}
+.nav .wrap{display:flex;align-items:center;gap:24px;height:58px}
+.brand{font-family:var(--serif);font-size:18px;text-decoration:none;white-space:nowrap}
+.nav ul{display:flex;gap:4px;list-style:none;margin:0 0 0 auto;padding:0;overflow-x:auto;scrollbar-width:none}
+.nav a.l{display:block;padding:8px 12px;font-size:14.5px;text-decoration:none;color:var(--chalk-dim);border-radius:6px;white-space:nowrap}
+.nav a.l:hover{color:var(--chalk);background:var(--board2)}
+
+/* hero as chalkboard */
+.hero{background:var(--board);color:var(--chalk);padding:72px 0 80px;background-image:radial-gradient(ellipse at 20% 0%,rgba(255,255,255,.07),transparent 60%)}
+.hero .wrap{display:grid;grid-template-columns:1.5fr 1fr;gap:56px;align-items:center}
+.hero small{display:block;color:var(--yellow);font-size:15px;margin-bottom:14px}
+.hero h1{font-family:var(--serif);font-weight:400;font-size:clamp(36px,5.6vw,62px);line-height:1.08;margin:0 0 22px;letter-spacing:-.01em}
+.hero p{color:var(--chalk-dim);max-width:52ch;margin:0 0 30px}
+.btns{display:flex;flex-wrap:wrap;gap:12px}
+.btn{display:inline-block;padding:12px 22px;border-radius:6px;font-weight:600;font-size:15px;text-decoration:none;border:2px solid var(--yellow)}
+.btn.p{background:var(--yellow);color:var(--board)}
+.btn.s{color:var(--yellow)}
+.btn:hover{transform:translateY(-1px)}
+.card{justify-self:center;text-align:center}
+.card img{width:230px;height:230px;object-fit:cover;border-radius:50%;border:5px solid var(--chalk);display:block;margin:0 auto 18px;background:var(--board2)}
+.hours{font-family:var(--serif);font-size:54px;line-height:1;color:var(--yellow)}
+.hours span{display:block;font-family:var(--sans);font-size:14px;color:var(--chalk-dim);margin-top:6px}
+
+/* sections look like ruled copybook paper */
+section{padding:72px 0}
+section.alt{background:#f1f4f1}
+h2{font-family:var(--serif);font-weight:400;font-size:clamp(28px,3.6vw,38px);line-height:1.15;margin:0 0 10px}
+.lead{color:var(--muted);max-width:60ch;margin:0 0 36px}
+.copy{background:#fff;border:1px solid var(--rule);border-left:3px solid var(--margin);padding:8px 28px 8px 32px;
+  background-image:repeating-linear-gradient(transparent 0 31px,var(--rule) 31px 32px);line-height:32px}
+.copy p{margin:0;padding:0}
+.copy p+p{margin-top:32px}
+
+/* details */
+dl.det{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:0;margin:0;border-top:2px solid var(--board)}
+.det div{padding:16px 16px 16px 0;border-bottom:1px solid var(--rule)}
+.det dt{font-size:14px;color:var(--muted)}
+.det dd{margin:2px 0 0;font-family:var(--serif);font-size:19px}
+
+/* module list */
+.mods{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:20px}
+.mod{background:#fff;border:1px solid var(--rule);border-top:4px solid var(--board);padding:24px}
+.mod:nth-child(even){border-top-color:var(--margin)}
+.mod h3{font-family:var(--serif);font-weight:400;font-size:21px;margin:0 0 8px}
+.mod p{margin:0;color:var(--muted);font-size:16px}
+.mod a{display:inline-block;margin-top:14px;font-weight:600;font-size:15px}
+
+/* objectives */
+ul.tick{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(380px,1fr));gap:4px 40px}
+ul.tick li{position:relative;padding:12px 0 12px 34px;border-bottom:1px solid var(--rule)}
+ul.tick li::before{content:"";position:absolute;left:4px;top:19px;width:14px;height:8px;border-left:3px solid var(--pen);border-bottom:3px solid var(--pen);transform:rotate(-45deg)}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:56px}
+h3.sub{font-family:var(--serif);font-weight:400;font-size:22px;margin:0 0 12px}
+.two ul{margin:0;padding-left:20px}
+.two li{margin-bottom:8px}
+
+/* evidence */
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:14px;margin-top:24px}
+.ph{aspect-ratio:4/3;border:2px dashed #a9b8b2;display:flex;align-items:center;justify-content:center;text-align:center;padding:12px;color:var(--muted);font-size:14px;background:#fff}
+.ph img{width:100%;height:100%;object-fit:cover}
+
+/* placeholders to fill in */
+.fill{background:var(--yellow);padding:0 5px;border-radius:3px;color:var(--ink)}
+
+/* quote / cert */
+.cert{background:var(--board);color:var(--chalk);padding:44px 40px;border-radius:4px}
+.cert blockquote{margin:0 0 20px;font-family:var(--serif);font-size:clamp(20px,2.6vw,26px);line-height:1.4}
+.cert p{margin:0;color:var(--chalk-dim);font-size:15px}
+.note{font-size:14px;color:var(--muted);margin-top:14px}
+
+footer{background:var(--board);color:var(--chalk-dim);padding:48px 0 32px;font-size:15px}
+footer .wrap{display:grid;grid-template-columns:1.4fr 1fr;gap:40px}
+footer h4{font-family:var(--serif);font-weight:400;font-size:19px;color:var(--chalk);margin:0 0 8px}
+footer p{margin:0 0 8px}
+footer a{text-decoration:none}
+footer a:hover{color:var(--yellow)}
+.copyr{border-top:1px solid var(--board2);margin-top:28px;padding-top:20px;grid-column:1/-1;font-size:14px}
+
+@media (max-width:820px){
+  .hero .wrap,.two,footer .wrap{grid-template-columns:1fr}
+  .hero{padding:48px 0 56px}.card{order:-1}.card img{width:170px;height:170px}
+  ul.tick{grid-template-columns:1fr}
+  .brand{display:none}.nav ul{margin-left:0}
+  section{padding:52px 0}
+  .copy{padding:8px 16px 8px 20px}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn:hover{transform:none}}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="#home">Muhammad Shoaib</a>
+    <nav aria-label="Main"><ul>
+      <li><a class="l" href="#home">Home</a></li>
+      <li><a class="l" href="#placement">Placement</a></li>
+      <li><a class="l" href="#sessions">Sessions</a></li>
+      <li><a class="l" href="#evaluation">Evaluation</a></li>
+      <li><a class="l" href="#evidence">Evidence</a></li>
+      <li><a class="l" href="#report">Final report</a></li>
+    </ul></nav>
+  </div>
+</header>
+
+<main>
+<div class="hero" id="home">
+  <div class="wrap">
+    <div>
+      <small>BS English Language Teaching, University of Sindh</small>
+      <h1>Final Internship Portfolio and Report</h1>
+      <p>Submitted by Muhammad Shoaib (Roll No. 2K24/ELT/66), Department of English Language and Literature, University of Sindh, Jamshoro. This portfolio documents 80 hours of classroom observation, teaching practice and professional learning at Ideal Public High School.</p>
+      <div class="btns">
+        <a class="btn p" href="#report">Read the final report</a>
+        <a class="btn s" href="#evidence">See the evidence</a>
+      </div>
+    </div>
+    <div class="card">
+      <img src="photo.jpg" alt="Portrait of Muhammad Shoaib">
+      <div class="hours">80<span>hours of school teaching internship</span></div>
+    </div>
+  </div>
+</div>
+
+<section id="overview">
+  <div class="wrap">
+    <h2>Internship at a glance</h2>
+    <p class="lead">The key facts about this placement.</p>
+    <dl class="det">
+      <div><dt>Student</dt><dd>Muhammad Shoaib</dd></div>
+      <div><dt>Roll number</dt><dd>2K24/ELT/66</dd></div>
+      <div><dt>Degree program</dt><dd>BS English Language Teaching (ELT), Third Year</dd></div>
+      <div><dt>University</dt><dd>University of Sindh, Jamshoro</dd></div>
+      <div><dt>Internship school</dt><dd>Ideal Public High School</dd></div>
+      <div><dt>School supervisor</dt><dd>Shahida Junejo</dd></div>
+      <div><dt>Internship coordinator</dt><dd>Dr. Sumera Bhunbhro</dd></div>
+      <div><dt>Duration</dt><dd>80 hours</dd></div>
+    </dl>
+  </div>
+</section>
+
+<section class="alt" id="introduction">
+  <div class="wrap">
+    <h2>Introduction</h2>
+    <p class="lead">Who I am and how the internship went.</p>
+    <div class="copy">
+      <p>My name is Muhammad Shoaib, and I am a third-year BS English Language Teaching (ELT) student at the University of Sindh, Jamshoro. As part of my academic program, I completed an 80-hour teaching internship at Ideal Public High School. This internship gave me the opportunity to gain practical experience and understand the working environment of a school.</p>
+      <p>During the initial days, I observed experienced teachers and learned about their instructional approaches, lesson delivery, and classroom activities. These observations helped me understand how teachers present lessons and deal with students of different learning abilities. Gradually, I became involved in classroom activities and started performing my assigned responsibilities.</p>
+      <p>Throughout the internship, I participated in teaching activities, helped students understand their lessons, and assisted teachers in maintaining a positive learning environment. I also observed how teachers used textbooks, examples, questions, and discussions to make lessons more effective.</p>
+      <p>This experience improved my understanding of teaching practices, my communication and presentation skills, and my confidence. It helped me connect my academic knowledge with real classroom experience and understand my future profession as an English language teacher.</p>
+    </div>
+  </div>
+</section>
+
+<section id="modules">
+  <div class="wrap">
+    <h2>What this portfolio contains</h2>
+    <p class="lead">Placement details, teaching records, supervisor evaluation, samples of work, and the final report.</p>
+    <div class="mods">
+      <article class="mod"><h3>Internship placement</h3><p>Profile of Ideal Public High School, its classes and students, and the teachers and supervisor who guided me.</p><a href="#placement">View the placement</a></article>
+      <article class="mod"><h3>Internship sessions</h3><p>My first days of observation, followed by teaching practice in grammar, vocabulary, reading and writing.</p><a href="#sessions">View the sessions</a></article>
+      <article class="mod"><h3>Supervisor evaluation</h3><p>Feedback from Shahida Junejo on lesson preparation, classroom management and professional conduct.</p><a href="#evaluation">View the evaluation</a></article>
+      <article class="mod"><h3>Sample of work and evidence</h3><p>Lesson plans, teaching aids, classroom photographs, student work and the school certificate.</p><a href="#evidence">View the evidence</a></article>
+      <article class="mod"><h3>Final internship report</h3><p>The full report: introduction, objectives, responsibilities, skills gained, challenges and conclusion.</p><a href="#report">Read the report</a></article>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="placement">
+  <div class="wrap">
+    <h2>Internship placement: Ideal Public High School</h2>
+    <p class="lead">The school where I completed my 80 hours.</p>
+    <div class="copy">
+      <p>I completed my internship at Ideal Public High School under the guidance of my school supervisor, Shahida Junejo. The placement let me see how a school runs day to day and how English is taught to students of different abilities.</p>
+      <p><span class="fill">[Add a few lines: school location, classes you taught, number of students, and facilities.]</span></p>
+    </div>
+  </div>
+</section>
+
+<section id="sessions">
+  <div class="wrap">
+    <h2>Internship sessions: observation and teaching practice</h2>
+    <p class="lead">How my 80 hours were spent.</p>
+    <div class="two">
+      <div>
+        <h3 class="sub">Observation</h3>
+        <ul>
+          <li>Observed experienced teachers and their lesson delivery.</li>
+          <li>Noted how textbooks, examples, questions and discussions were used.</li>
+          <li>Learned how teachers handle students of different learning abilities.</li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="sub">Teaching practice</h3>
+        <ul>
+          <li>Taught English grammar, vocabulary, reading and writing.</li>
+          <li>Helped students understand lessons and assisted teachers in class.</li>
+          <li>Took part in classroom activities and assigned duties.</li>
+        </ul>
+      </div>
+    </div>
+    <p class="note"><span class="fill">[Optional: add your lesson topics, dates or a short daily log here.]</span></p>
+  </div>
+</section>
+
+<section class="alt" id="objectives">
+  <div class="wrap">
+    <h2>Internship objectives</h2>
+    <p class="lead">I set out to develop professional teaching abilities and gain firsthand experience of the educational environment. My main objectives were:</p>
+    <ul class="tick">
+      <li>To understand the structure and daily functioning of a school environment.</li>
+      <li>To develop the ability to prepare and organize effective lesson plans.</li>
+      <li>To practice teaching English grammar, vocabulary, reading, and writing skills.</li>
+      <li>To learn how to explain difficult concepts through simple language and relevant examples.</li>
+      <li>To understand the different learning abilities and educational needs of students.</li>
+      <li>To explore teaching aids and classroom resources for improving the learning process.</li>
+      <li>To develop skills in asking questions, evaluating student understanding, and providing constructive feedback.</li>
+      <li>To build professional ethics, responsibility, patience, and confidence as a future English language teacher.</li>
+    </ul>
+  </div>
+</section>
+
+<section id="evaluation">
+  <div class="wrap">
+    <h2>Supervisor evaluation</h2>
+    <p class="lead">Assessment by my school supervisor, Shahida Junejo.</p>
+    <div class="copy">
+      <p>My supervisor assessed my lesson preparation, classroom management, communication with students and professional conduct. <span class="fill">[Add her feedback, marks or remarks here once you have them.]</span></p>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="evidence">
+  <div class="wrap">
+    <h2>Sample of work and evidence</h2>
+    <p class="lead">Photographs and documents from the internship.</p>
+    <div class="grid">
+      <div class="ph">Certificate or letter from the school</div>
+      <div class="ph">Classroom photo</div>
+      <div class="ph">Lesson plan</div>
+      <div class="ph">Teaching aid</div>
+      <div class="ph">Student work</div>
+      <div class="ph">Photo with supervisor</div>
+    </div>
+    <p class="note">To add a photo, upload it next to this file and replace a box with <code>&lt;div class="ph"&gt;&lt;img src="photo-name.jpg" alt="Describe the photo"&gt;&lt;/div&gt;</code>.</p>
+  </div>
+</section>
+
+<section id="report">
+  <div class="wrap">
+    <h2>Final internship report</h2>
+    <p class="lead">The full academic report covers six parts: introduction, objectives, activities and responsibilities, skills and knowledge acquired, challenges and learnings, and conclusion and acknowledgments.</p>
+    <div class="btns">
+      <a class="btn p" style="background:var(--board);border-color:var(--board);color:var(--chalk)" href="report.pdf">Download the report (PDF)</a>
+    </div>
+    <p class="note">Save your report as <code>report.pdf</code> in the same folder as this page and the button will open it.</p>
+  </div>
+</section>
+
+<section class="alt" id="identity">
+  <div class="wrap two">
+    <div>
+      <h2>Career objective</h2>
+      <p>To become a confident and effective English language teacher who uses simple, communicative and student-centered methods. I want to help students in Sindh learn English with confidence while I keep growing through study, training and classroom experience.</p>
+      <h3 class="sub" style="margin-top:28px">Skills I developed</h3>
+      <ul>
+        <li>Classroom communication and presentation</li>
+        <li>Lesson planning and organizing teaching material</li>
+        <li>Teaching grammar, vocabulary, reading and writing</li>
+        <li>Explaining difficult ideas in simple language</li>
+        <li>Classroom management with mixed-ability students</li>
+        <li>Questioning, checking understanding and giving feedback</li>
+        <li>Professional ethics, responsibility and teamwork</li>
+      </ul>
+    </div>
+    <div>
+      <h2>Education and plans</h2>
+      <h3 class="sub">Where I am now</h3>
+      <ul>
+        <li>BS English Language Teaching (ELT), University of Sindh, Jamshoro, Third Year <span class="fill">[CGPA: ___]</span></li>
+        <li>Completed an 80-hour teaching internship at Ideal Public High School</li>
+        <li><span class="fill">[Add any certificate, workshop or award]</span></li>
+      </ul>
+      <h3 class="sub" style="margin-top:28px">What comes next</h3>
+      <ul>
+        <li>Complete the BS ELT degree with strong subject and teaching knowledge</li>
+        <li>Gain more classroom experience as an English teacher</li>
+        <li>Study further in English Language Teaching or Applied Linguistics</li>
+        <li>Use simple teaching aids and modern methods to make English easier for students</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="certificate">
+  <div class="wrap">
+    <div class="cert">
+      <blockquote>This is to certify that Muhammad Shoaib has successfully completed an 80-hour teaching internship at Ideal Public High School. His sincere efforts and professional conduct are appreciated.</blockquote>
+      <p>Signed by the school supervisor, Shahida Junejo <span class="fill">[and Principal's name]</span></p>
+    </div>
+    <p class="note">Use this wording only if your school's certificate says the same. Otherwise replace it with the real text.</p>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div>
+      <h4>Muhammad Shoaib</h4>
+      <p>BS English Language Teaching (ELT), University of Sindh, Jamshoro. Roll No. 2K24/ELT/66.</p>
+      <p>I thank the Principal, the teachers and my supervisor, Shahida Junejo, at Ideal Public High School, and my coordinator, Dr. Sumera Bhunbhro, for their guidance and support.</p>
+    </div>
+    <div>
+      <h4>Go to</h4>
+      <p><a href="#home">Home</a></p>
+      <p><a href="#placement">Placement</a></p>
+      <p><a href="#sessions">Sessions</a></p>
+      <p><a href="#evaluation">Evaluation</a></p>
+      <p><a href="#evidence">Evidence</a></p>
+      <p><a href="#report">Final report</a></p>
+    </div>
+    <p class="copyr">© 2026 Muhammad Shoaib. Department of English Language and Literature, University of Sindh, Jamshoro.</p>
+  </div>
+</footer>
+</body>
+</html>
